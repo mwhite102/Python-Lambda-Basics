@@ -37,6 +37,19 @@ print(add_lambda(1, 2))
 3
 ```
 
+### Using a lambda with the filter function
+
+```Python
+# filter even numbers from a list
+all_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = list(filter(lambda x: x % 2 == 0, all_numbers))
+
+print(even_numbers)
+
+# output
+[2, 4, 6, 8, 10]
+```
+
 ### Sorting a dictionary by key using a key function
 
 ```Python
