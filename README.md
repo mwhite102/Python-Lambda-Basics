@@ -18,6 +18,25 @@ Expression is a single expression whose result is implicitly returned.
 
 ## Examples
 
+### A very simple comparison of function vs lambda
+
+```Python
+# define a regular function
+def add(x, y):
+    return x + y
+
+# define an equivalent lambda function
+add_lambda = lambda x, y: x + y
+
+# test the regular function and the lambda function
+print(add(1, 2))
+print(add_lambda(1, 2))
+
+# output
+3
+3
+```
+
 ### Sorting a dictionary by key using a key function
 
 ```Python
@@ -51,7 +70,7 @@ if __name__ == "__main__":
 # George is 44 years old and lives in New York City    
 ```
 
-### Sorting a dctionary by key using a lambda function
+### Sorting a dictionary by key using a lambda function
 
 ```Python
 def main():
