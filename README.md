@@ -58,7 +58,7 @@ def main():
     persons = create_list_of_persons()
     print_list(persons)
 
-# print list sorted by city
+# print list sorted by city using a lambda
 def print_list(persons):
     for person in sorted(persons, key=lambda person: person["city"]):
         print(f"{person['name']} is {person['age']} years old and lives in {person['city']}  ")
@@ -74,6 +74,7 @@ def create_list_of_persons():
 if __name__ == "__main__":
     main();
 
+# Output
 # Susie is 59 years old and lives in Atlanta  
 # Frank is 46 years old and lives in Chicago  
 # George is 44 years old and lives in New York City    
